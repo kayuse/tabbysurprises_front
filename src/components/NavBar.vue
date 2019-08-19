@@ -70,7 +70,7 @@
 				<!-- logo -->
 				<h1>
 					<a id="logo" class="logo" href="index.html">
-						<img src="images/logo.png" alt="" class="img-fluid"><span>Tabby</span> Suprises
+						<img src="images/logo.png" alt="" class="img-fluid"><span>Tabby's</span> Suprises
 					</a>
 				</h1>
 				<!-- //logo -->
