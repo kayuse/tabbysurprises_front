@@ -9,7 +9,7 @@
                 <div class="banner-info_agile_w3ls">
                   <h5>On their special day,</h5>
                   <h3 class="text-da mb-4">
-                    <span>Suprise your loved ones</span>
+                    <span>Surprise your loved ones</span>
                   </h3>
                   <p>
                     We know you are too busy to plan ahead... We can help
@@ -109,7 +109,7 @@
                 </div>
                 <div class="card-body border border-top-0">
                   <h5 class="blog-title card-title m-0">
-                    <a href="menu.html">Suprise Birthdays</a>
+                    <a href="menu.html">Surprise Birthdays</a>
                   </h5>
                   <p class="mt-3">Without worries and Planning....</p>
                   <a href="menu.html" class="btn button-w3ls mt-4 mb-3">
@@ -158,7 +158,7 @@
                 </div>
                 <div class="card-body border border-top-0">
                   <h5 class="blog-title card-title m-0">
-                    <a href="menu.html">Custom Suprise</a>
+                    <a href="menu.html">Custom Surprise</a>
                   </h5>
                   <p class="mt-3">You can say what's the custom suprise you want</p>
                   <a href="menu.html" class="button-w3ls mt-4 mb-3">

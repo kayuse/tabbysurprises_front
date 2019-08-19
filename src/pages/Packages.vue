@@ -31,7 +31,7 @@
                   <a href="#gal1">
                     <img src="@/assets/images/blog1.jpg" alt=" " class="img-fluid" />
                     <h4 class="p-mask">
-                      Birthday Suprises
+                      Birthday Surprises
                       <span></span>
                     </h4>
                     <router-link to="/order/1" class="button-w3ls mt-5 ml-2" id="order-button">
@@ -61,7 +61,7 @@
                   <a href="#gal3">
                     <img src="@/assets/images/blog3.jpg" alt=" " class="img-fluid" />
                     <h4 class="p-mask">
-                      Custom Suprises -
+                      Custom Surprises -
                       <span></span>
                     </h4>
                     <router-link to="/order/3" class="button-w3ls mt-5 ml-2" id="order-button">

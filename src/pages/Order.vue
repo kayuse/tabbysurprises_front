@@ -52,7 +52,7 @@
                       />
                     </div>
                      <div class="form-group">
-                      <label class="mb-2">Where do you want to plan your Suprise</label>
+                      <label class="mb-2">Where do you want to plan your Surprise</label>
                       <textarea
                         type="text"
                         class="form-control"
