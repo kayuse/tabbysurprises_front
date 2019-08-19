@@ -559,12 +559,13 @@ a.button-w3ls:hover {
 }
 
 .banner-top1 {
-    background: url(../images/1.jpg) no-repeat bottom;
+    background: url(../images/custom/2.jpeg) no-repeat bottom;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
+    height:575px;
 }
 
 .banner-top2 {

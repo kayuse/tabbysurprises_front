@@ -7,13 +7,12 @@
             <div class="banner-left-w3">
               <div class="container">
                 <div class="banner-info_agile_w3ls">
-                  <h5>Suprise your Loved Ones</h5>
+                  <h5>On their special day,</h5>
                   <h3 class="text-da mb-4">
-                    <span>Grilled Burger</span>
+                    <span>Suprise your loved ones</span>
                   </h3>
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                    laudantium
+                    We know you are too busy to plan ahead... We can help
                   </p>
                   <a href="about.html" class="button-w3ls active mt-5">
                     Read More
@@ -71,16 +70,11 @@
                 <p class="w3ls-title-sub">About Us</p>
                 <h3 class="w3ls-title">
                   Welcome to
-                  <span>Tasty Burger</span>
+                  <span>Tabby's Suprise</span>
                 </h3>
               </div>
               <p class="about-text">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                doloremque
-                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                architecto
-                beatae vitae dicta
-                sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit.
+                Ife put your content here....
               </p>
               <a href="about.html" class="button-w3ls mt-5">
                 Read More
@@ -117,7 +111,7 @@
                   <h5 class="blog-title card-title m-0">
                     <a href="menu.html">Suprise Birthdays</a>
                   </h5>
-                  <p class="mt-3">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
+                  <p class="mt-3">Without worries and Planning....</p>
                   <a href="menu.html" class="btn button-w3ls mt-4 mb-3">
                     View More
                     <span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
