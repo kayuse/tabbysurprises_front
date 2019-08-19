@@ -69,9 +69,9 @@
 			<div class="nav-content">
 				<!-- logo -->
 				<h1>
-					<a id="logo" class="logo" href="index.html">
+					<router-link to="/" class="logo">
 						<img src="images/logo.png" alt="" class="img-fluid"><span>Tabby's</span> Suprises
-					</a>
+					</router-link>
 				</h1>
 				<!-- //logo -->
 				<!-- nav -->

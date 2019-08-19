@@ -7,7 +7,7 @@
             <div class="banner-left-w3">
               <div class="container">
                 <div class="banner-info_agile_w3ls">
-                  <h5>Only Fresh Burgers</h5>
+                  <h5>Suprise your Loved Ones</h5>
                   <h3 class="text-da mb-4">
                     <span>Grilled Burger</span>
                   </h3>
