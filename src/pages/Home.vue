@@ -136,9 +136,8 @@
                   <h5 class="blog-title card-title m-0">
                     <a href="menu.html">Wedding Anniversary</a>
                   </h5>
-                  <p class="mt-3">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
-                  <a href="menu.html" class="button-w3ls active mt-4 mb-3">
-                    View More
+                  <p class="mt-3">Add spice to your wedding with a surprise for your loved one.</p>
+                  <a href="menu.html" class="button-w3ls active mt-4 mb-3">Contact us today.
                     <span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
                   </a>
                 </div>

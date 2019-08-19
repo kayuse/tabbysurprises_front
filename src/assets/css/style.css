@@ -565,11 +565,10 @@ a.button-w3ls:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
-    height:575px;
 }
 
 .banner-top2 {
-    background: url(../images/2.jpg) no-repeat bottom;
+    background: url(../images/custom/1.jpg) no-repeat bottom;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -578,7 +577,7 @@ a.button-w3ls:hover {
 }
 
 .banner-top3 {
-    background: url(../images/3.jpg) no-repeat bottom;
+    background: url(../images/custom/3.jpg) no-repeat bottom;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;

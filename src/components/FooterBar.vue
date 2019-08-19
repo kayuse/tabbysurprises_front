@@ -6,7 +6,7 @@
 					<!-- logo -->
 					<h2>
 						<a class="logo text-wh" href="index.html">
-							<img src="images/logo.png" alt="" class="img-fluid"><span>Tabby's</span> Suprises
+							<img src="images/logo.png" alt="" class="img-fluid"><span>Tabby's</span> Suprise
 						</a>
 					</h2>
 					<!-- //logo -->

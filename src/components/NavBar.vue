@@ -70,7 +70,7 @@
 				<!-- logo -->
 				<h1>
 					<router-link to="/" class="logo">
-						<img src="images/logo.png" alt="" class="img-fluid"><span>Tabby's</span> Suprises
+						<img src="images/logo.png" alt="" class="img-fluid"><span>Tabby's</span> Suprise
 					</router-link>
 				</h1>
 				<!-- //logo -->
