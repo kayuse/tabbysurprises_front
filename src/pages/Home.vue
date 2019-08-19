@@ -70,7 +70,7 @@
                 <p class="w3ls-title-sub">About Us</p>
                 <h3 class="w3ls-title">
                   Welcome to
-                  <span>Tabby's Suprise</span>
+                  <span>Tabby's Surprise</span>
                 </h3>
               </div>
               <p class="about-text">
@@ -160,7 +160,7 @@
                   <h5 class="blog-title card-title m-0">
                     <a href="menu.html">Custom Surprise</a>
                   </h5>
-                  <p class="mt-3">You can say what's the custom suprise you want</p>
+                  <p class="mt-3">You can say what's the custom Surprise you want</p>
                   <a href="menu.html" class="button-w3ls mt-4 mb-3">
                     View More
                     <span class="fa fa-caret-right ml-1" aria-hidden="true"></span>
