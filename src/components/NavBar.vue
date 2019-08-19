@@ -80,24 +80,8 @@
 						<label for="drop" class="toggle">Menu</label>
 						<input type="checkbox" id="drop" />
 						<ul class="menu">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html">About Us</a></li>
-							<li>
-								<!-- First Tier Drop Down -->
-								<label for="drop-3" class="toggle toogle-2">Pages <span class="fa fa-angle-down"
-										aria-hidden="true"></span>
-								</label>
-								<a href="#pages">Pages <span class="fa fa-angle-down" aria-hidden="true"></span></a>
-								<input type="checkbox" id="drop-3" />
-								<ul>
-									<li><a class="drop-text" href="#services">Services</a></li>
-									<li><a class="drop-text" href="about.html">Our Chefs</a></li>
-									<li><a class="drop-text" href="#blog">Blog</a></li>
-									<li><a class="drop-text" href="single.html">Single Page</a></li>
-									<li><a class="drop-text" href="login.html">Login</a></li>
-									<li><a class="drop-text" href="register.html">Register</a></li>
-								</ul>
-							</li>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About Us</a></li>
 							<li><a href="menu.html">Menu</a></li>
 							<li><a href="contact.html">Contact Us</a></li>
 							<li>
