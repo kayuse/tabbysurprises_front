@@ -102,7 +102,7 @@
                   <a href="menu.html">
                     <img
                       class="card-img-bottom"
-                      src="@/assets/images/blog1.jpg"
+                      src="@/assets/images/custom/5.jpeg"
                       alt="Card image cap"
                     />
                   </a>
@@ -127,7 +127,7 @@
                   <a href="menu.html">
                     <img
                       class="card-img-bottom"
-                      src="@/assets/images/blog2.jpg"
+                      src="@/assets/images/custom/4.jpg"
                       alt="Card image cap"
                     />
                   </a>
