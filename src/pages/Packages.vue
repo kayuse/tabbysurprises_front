@@ -29,7 +29,7 @@
               <div class="col-md-4">
                 <div class="gallery-demo">
                   <a href="#gal1">
-                    <img src="@/assets/images/blog1.jpg" alt=" " class="img-fluid" />
+                    <img src="@/assets/images/custom/5.jpeg" alt=" " class="img-fluid" />
                     <h4 class="p-mask">
                       Birthday Surprises
                       <span></span>
@@ -44,7 +44,7 @@
               <div class="col-md-4 mt-md-0 mt-4">
                 <div class="gallery-demo">
                   <a href="#gal2">
-                    <img src="@/assets/images/blog2.jpg" alt=" " class="img-fluid" />
+                    <img src="@/assets/images/custom/4.jpg" alt=" " class="img-fluid" />
                     <h4 class="p-mask">
                       Wedding Anniversary -
                       <span></span>
@@ -59,7 +59,7 @@
               <div class="col-md-4 mt-md-0 mt-4">
                 <div class="gallery-demo">
                   <a href="#gal3">
-                    <img src="@/assets/images/blog3.jpg" alt=" " class="img-fluid" />
+                    <img src="@/assets/images/custom/9.jpg" alt=" " class="img-fluid" />
                     <h4 class="p-mask">
                       Custom Surprises -
                       <span></span>

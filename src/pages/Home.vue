@@ -151,7 +151,7 @@
                   <a href="menu.html">
                     <img
                       class="card-img-bottom"
-                      src="@/assets/images/blog3.jpg"
+                      src="@/assets/images/custom/9.jpg"
                       alt="Card image cap"
                     />
                   </a>
