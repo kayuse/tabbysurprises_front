@@ -10,7 +10,7 @@ Vue.component("default-layout", Default);
 Vue.config.productionTip = false
 const BASE_URL =
   process.env.NODE_ENV === "production"
-    ? "http://admin.tabbysurprises.com"
+    ? "http://admin.tabbysurprises.com/"
     : "http://localhost:8000/api/";
 require('@/assets/css/bootstrap.css')
 require('@/assets/css/css_slider.css')
