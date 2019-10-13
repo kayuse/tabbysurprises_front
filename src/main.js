@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from "./router";
 import Default from "./layouts/Default.vue";
 import axios from "axios";
-import  store  from "@/util/store.js";
+import store from "@/util/store.js";
 
 
 Vue.component("default-layout", Default);
@@ -18,14 +18,17 @@ require('@/assets/css/font-awesome.min.css')
 require('@/assets/css/single.css')
 require('@/assets/css/style.css')
 
-async function initApp(){
+async function initApp() {
   await axios
-  .get(BASE_URL + "token")
-  .then(res => store.setToken(res.data.token));
+    .get(BASE_URL + "token")
+    .then(res => store.setToken(res.data.token));
   store.state.axios = axios.create({
-    baseURL : BASE_URL,
-    timeout:1000,
-    headers: {'apiToken':store.state.token}
+    baseURL: BASE_URL,
+    timeout: 20000,
+    headers: {
+      'apiToken': store.state.token,
+      'Content-Type': 'application/json',
+    }
   });
   new Vue({
     router,

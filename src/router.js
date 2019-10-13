@@ -26,6 +26,12 @@ export default new Router({
       component: require("@/pages/Packages.vue").default // load sync home
     },
     {
+      path: "/order-success",
+      name: "success",
+      meta: { layout: "default-layout" },
+      component: require("@/pages/OrderSuccess.vue").default // load sync home
+    },
+    {
       path: "/order/:id",
       name: "packages",
       meta: { layout: "default-layout" },

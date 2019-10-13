@@ -10,7 +10,7 @@
                 class="alert alert-danger"
                 role="alert"
                 v-if="errors.length > 0"
-              >{{errors.join(',')}}</div>
+              >{{errors.join(",")}}</div>
               <label class="label-input100" for="first-name">Tell us your name *</label>
               <div
                 class="wrap-input100 rs1-wrap-input100 validate-input"
@@ -87,18 +87,22 @@
               <label class="label-input100" for="phone">Your Friend's Name</label>
               <div class="wrap-input100">
                 <input
-                  id="phone"
+                  id="friend_name"
                   class="input100"
                   type="text"
-                  name="phone"
+                  name="friend_name"
                   v-model="orderData.order.celebrant_name"
-                  placeholder="Eg. +1 800 000000"
+                  placeholder=""
                 />
                 <span class="focus-input100"></span>
               </div>
               <label class="label-input100" for="phone">What day is this surprise?</label>
               <div class="wrap-input100">
-                <date-pick v-model="date" :format="'YYYY-MM-DD HH:mm'" :pickTime="true"></date-pick>
+                <date-pick
+                  v-model="orderData.order.celebration_time"
+                  :format="'YYYY-MM-DD HH:mm:ss'"
+                  :pickTime="true"
+                ></date-pick>
                 <span class="focus-input100"></span>
               </div>
               <label class="label-input100" for="phone">Where are we celebrating</label>
@@ -108,7 +112,7 @@
                   class="input100"
                   type="text"
                   v-model="orderData.order.celebration_address"
-                  placeholder="Eg. +1 800 000000"
+                  placeholder=""
                 />
                 <span class="focus-input100"></span>
               </div>
@@ -150,7 +154,7 @@
               </div>
 
               <div class="container-contact100-form-btn">
-                <button class="contact100-form-btn">Send Message</button>
+                <button class="contact100-form-btn" v-on:click="submitOrder($event)">{{getQuoteText}}</button>
               </div>
             </form>
 
@@ -211,6 +215,8 @@ export default {
       posts: null,
       friendName: "Your Friend",
       errors: [],
+      date: "",
+      getQuoteText : "Get Quote",
       isLocationApi: false,
       orderPackage: {
         name: "",
@@ -225,11 +231,11 @@ export default {
         location: "",
         order: {
           celebrant_name: "",
-          celbration_address: "",
+          celebration_address: "",
           celebration_type: "",
           celebration_time: "",
           other: null,
-          service: []
+          services: []
         }
       },
       isFoodService: false,
@@ -247,8 +253,6 @@ export default {
     };
     if (window.google && window.google.maps) {
       self.initMap();
-      this.geocdoer = new window.google.maps.Geocoder();
-      console.log(geocdoer);
       return;
     }
 
@@ -279,7 +283,21 @@ export default {
         this.orderPackage = { id: orderId, name: "Custom Suprises" };
       }
     },
-    makeOrder: function() {},
+    makeOrder: function() {
+      let axios = store.state.axios;
+      axios
+        .post("/order", this.orderData)
+        .then(response => {
+          if (response.data.status == 1) {
+            this.$router.push({name:'success'})
+          }
+        })
+        .catch(error => {
+          console.log(error);
+          console.log(error.response);
+          this.errors = ["There was an error in submitting your request"];
+        });
+    },
     setGeoLocation: function() {
       if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
@@ -317,8 +335,52 @@ export default {
         });
       }
     },
-    submitOrder: function() {
-      let axios = store.state.axios;
+    submitOrder: function(e) {
+      e.preventDefault();
+      this.getQuoteText = "Getting Quote, Please wait.....";
+      this.errors = [];
+      this.setServices();
+      
+      Object.keys(this.orderData).forEach((key, index) => {
+        if (this.orderData[key] == "") {
+          this.setError(key + " is cannot be empty");
+        }
+        if (key == "order") {
+          this.validateOrder(this.orderData[key]);
+        }
+      });
+      if (this.errors.length > 0) {
+        this.getQuoteText = "Get Quote";
+        return;
+      }
+      this.orderData.order.celebration_type = this.orderPackage.name;
+      this.makeOrder();
+      this.getQuoteText = "Get Quote";
+    },
+    setServices: function() {
+      this.orderData.order.services = [];
+      if (this.isFoodService) {
+        this.orderData.order.services.push(1);
+      }
+      if (this.isMusicService) {
+        this.orderData.order.services.push(2);
+      }
+    },
+    validateOrder: function(order) {
+      if (order.celebrant_name == "") {
+        this.setError("The celebrant name, we need it ");
+      }
+      if ((order.celbration_address = "")) {
+        this.setError("Where is the place of surprise ;)");
+      }
+      if (order.celebration_time == "") {
+        this.setError(
+          "24 hours is a long time, when would you have us be there?"
+        );
+      }
+      if (order.services.length <= 0) {
+        this.setError("What service would you like us to offer to you?");
+      }
     },
     showLocationError: function(error) {
       switch (error.code) {
@@ -369,14 +431,14 @@ p {
   display: none !important;
 }
 
-.vdpComponent.vdpWithInput>input[type="text"] {
+.vdpComponent.vdpWithInput > input[type="text"] {
   display: block;
   width: 100%;
   background: transparent;
   font-family: Poppins-Regular;
   font-size: 18px;
   color: #666666;
-  padding:20px;
+  padding: 20px;
   line-height: 1.2;
 }
 </style>
