@@ -78,8 +78,7 @@
                   type="text"
                   name="address"
                   placeholder="Address"
-                  :value="orderData.location"
-                  disabled
+                  v-model="orderData.location"
                 />
                 <span class="focus-input100"></span>
               </div>
